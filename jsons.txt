@@ -1,0 +1,104 @@
+{
+  "id": 55,
+  "created_at": "2017-12-12 12:35:12",
+  "updated_at": "2018-10-23 18:38:12",
+  "deleted_at": null,
+  "email": "kobayashi-n@eatas.co.jp",
+  "password": "$2y$10$O0RrPrAP0GmwapatE3acy.rLsAvX.uhQ47/FznANPFafYKxfdkZGy",
+  "remember_token": "0McZ9YINSoZHT3NNfmDwugxLvuiASEdLAbcedWGcf9uxLac4lqrI44ALZhlU",
+  "nickname": "koba",
+  "prefecture_id": 11,
+  "address": "中央, 2-16-17-3",
+  "tel": "09096751294",
+  "mobile_tel": null,
+  "fax": null,
+  "gender": 0,
+  "birthday": "1950-07-26 00:00:00",
+  "job_id": null,
+  "user_status_id": 1,
+  "first_name": "伸隆",
+  "last_name": "小林",
+  "mail_deliverable": 1,
+  "init_token": null,
+  "company_name": null,
+  "is_company": 0,
+  "store_name": null,
+  "post_code": "340-0016",
+  "address_detail": "中央, 2-16-17-3",
+  "address_room": null,
+  "new_email": null
+
+{
+  "created": "2018-09-27T09:36:08Z",
+  "project": {
+    "archived": false,
+    "projectKey": "EATAS_EXTERNAL",
+    "name": "EATASサービス外部委託",
+    "chartEnabled": true,
+    "id": 5730,
+    "subtaskingEnabled": true
+  },
+  "id": 10622172,
+  "type": 12,
+  "content": {
+    "revision_type": "commit",
+    "ref": "refs/heads/master",
+    "change_type": "update",
+    "revisions": [],
+    "revision_count": 0,
+    "repository": {
+      "name": "eatas",
+      "id": 1160
+    }
+  },
+  "notifications": [],
+  "createdUser": {
+    "nulabAccount": {
+      "nulabId": "IBDDeZg9loc76ww6NDxil1jm9Y6ZqUvd5zRQFDFfU88jeUKbOi",
+      "name": "小林 伸隆",
+      "uniqueId": "kobayashi-n"
+    },
+    "name": "小林 伸隆",
+    "mailAddress": null,
+    "id": 8220,
+    "roleType": 1,
+    "userId": null
+  }
+}
+{
+  "created": "2018-09-27T09:36:22Z",
+  "project": {
+    "archived": false,
+    "projectKey": "EATAS_EXTERNAL",
+    "name": "EATASサービス外部委託",
+    "chartEnabled": true,
+    "id": 5730,
+    "subtaskingEnabled": true
+  },
+  "id": 10622234,
+  "type": 12,
+  "content": {
+    "ref": "refs/tags/1.1.10",
+    "revision_type": "tag",
+    "change_type": "create",
+    "revisions": [],
+    "revision_count": 0,
+    "repository": {
+      "name": "eatas",
+      "id": 1160
+    }
+  },
+  "notifications": [],
+  "createdUser": {
+    "nulabAccount": {
+      "nulabId": "IBDDeZg9loc76ww6NDxil1jm9Y6ZqUvd5zRQFDFfU88jeUKbOi",
+      "name": "小林 伸隆",
+      "uniqueId": "kobayashi-n"
+    },
+    "name": "小林 伸隆",
+    "mailAddress": null,
+    "id": 8220,
+    "roleType": 1,
+    "userId": null
+  }
+}

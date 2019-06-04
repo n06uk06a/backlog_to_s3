@@ -1,0 +1,79 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Globals:
+  Function:
+    Timeout: 60
+  Api:
+    MethodSettings:
+    - DataTraceEnabled: true
+      HttpMethod: '*'
+      LoggingLevel: INFO
+      ResourcePath: /*
+Resources:
+  CIStartFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: "sts:AssumeRole"
+      ManagedPolicyArns: 
+        - !Sub "arn:${AWS::Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+      Policies:
+        -
+          PolicyName: "PutDefinitionToS3"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              -
+                Effect: "Allow"
+                Action: "s3:PutObject"
+                Resource: "*"
+        -
+          PolicyName: "GetParameters"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              -
+                Effect: "Allow"
+                Action: "ssm:GetParameter"
+                Resource: "*"
+              - 
+                Effect: "Allow"
+                Action: "kms:Decrypt"
+                Resource: "*"
+
+  CIStartFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: build/
+      Handler: ci
+      Runtime: go1.x
+      Role: !GetAtt CIStartFunctionRole.Arn
+      Events:
+        CatchAll:
+          Type: Api
+          Properties:
+            Path: /pushed
+            Method: POST
+      Environment:
+        Variables:
+          IMAGE_NAME: !Ref ImageName
+          S3_BUCKET: !Ref Bucket
+          S3_PREFIX: !Ref Prefix
+
+Outputs:
+  CIAPI:
+    Description: "API Gateway endpoint URL for Prod environment for First Function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+
+  CIStartFunction:
+    Description: "First Lambda Function ARN"
+    Value: !GetAtt CIStartFunction.Arn
+
+  CIStartFunctionRole:
+    Description: "Implicit IAM Role created for Hello World function"
+    Value: !GetAtt CIStartFunctionRole.Arn

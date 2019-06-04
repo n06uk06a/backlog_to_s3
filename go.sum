@@ -1,0 +1,13 @@
+github.com/aws/aws-lambda-go v1.8.0 h1:YMCzi9FP7MNVVj9AkGpYyaqh/mvFOjhqiDtnNlWtKTg=
+github.com/aws/aws-lambda-go v1.8.0/go.mod h1:zUsUQhAUjYzR8AuduJPCfhBuKWUaDbQiPOG+ouzmE1A=
+github.com/aws/aws-sdk-go v1.16.7 h1:L6gPtqKJsdIIbvmpINjbVAdtzUOCPwhCUkXkgVGLhuQ=
+github.com/aws/aws-sdk-go v1.16.7/go.mod h1:KmX6BPdI08NWTb3/sm4ZGu5ShLoqVDhKgpiN924inxo=
+github.com/aws/aws-sdk-go v1.16.10 h1:x1Lz3bW9CQdiBhQJqkkmKzreqgMs8Di3EbW3/4pqPVk=
+github.com/aws/aws-sdk-go v1.16.10/go.mod h1:KmX6BPdI08NWTb3/sm4ZGu5ShLoqVDhKgpiN924inxo=
+github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af h1:pmfjZENx5imkbgOkpRUYLnmbU7UEFbjtDA2hxJ1ichM=
+github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af/go.mod h1:Nht3zPeWKUH0NzdCt2Blrr5ys8VGpn0CEB0cQHVjt7k=
+github.com/mdempsky/gocode v0.0.0-20181212191131-9c77a290fde2 h1:OqIVo8a2x2U2cn0+W044cmL3kSdCX5Rc7kRnK3ZRyAI=
+github.com/mdempsky/gocode v0.0.0-20181212191131-9c77a290fde2/go.mod h1:hltEC42XzfMNgg0S1v6JTywwra2Mu6F6cLR03debVQ8=
+golang.org/x/tools v0.0.0-20181218020041-13ba8ad772df h1:sXpV2FbQYylCBI9NPmrOEEFd/PTh5prLXXWYpQef3u0=
+golang.org/x/tools v0.0.0-20181218020041-13ba8ad772df/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
+golang.org/x/tools v0.0.0-20181220221020-d12035dfdc6d/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
